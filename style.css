@@ -1,0 +1,150 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/* Left and Right Side Styling */
+.left-side, .right-side {
+    width: 48%;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling the form elements */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Sub-category Styling */
+.subcategories {
+    /* margin-left: 10px; */
+    display: flex;
+    gap: 2rem;
+}
+
+.subcategories label {
+    font-weight: normal;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+/* Button Styling */
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Styling the summary and charts */
+#expense-summary {
+    margin-top: 30px;
+}
+
+#expense-summary ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#expense-summary li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#chart-container {
+    margin-top: 30px;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Weekly data section styled as a table */
+#weekly-data {
+    margin-top: 30px;
+    overflow-x: auto;
+}
+
+#weekly-expense-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#weekly-expense-table th, #weekly-expense-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#weekly-expense-table th {
+    background-color: #f8f9fa;
+}
+
+#weekly-expense-table td button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#weekly-expense-table td button:hover {
+    background-color: #c82333;
+}
+
+/* Alert message styling */
+#alert-message {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #dc3545;
+}
+
